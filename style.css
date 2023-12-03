@@ -1,0 +1,63 @@
+body {
+  background: hsl(210deg, 30%, 12%);
+  color: hsl(0deg 0% 100%);
+}
+.wrapper {
+  display: flex;
+  gap: 10px;
+}
+.item {
+  height: 32px;
+  border: 2px solid hsl(210deg 8% 50%);
+  background: hsl(210deg 15% 20%);
+}
+.item.stretch {
+  /*
+    Because this item is empty, it
+    has a default hypothetical width
+     of 0px. This isn't realistic,
+     though; in a typical case,
+     there would be content in here!
+     And so we set a width of 300px
+     to simulate it containing stuff.
+  */
+  width: 300px;
+flex-grow: 1;
+border-radius: 16px;
+}
+.item.ball {
+width: 30px;
+/*
+  NOTE: We could prevent the circle
+  from squishing into an oval by
+  setting border-radius: 16px
+  instead. I'm using percentages
+  because it makes for a better
+  demo. But even with a pixel-based
+  radius, we still need
+  flex-shrink: 0 to prevent the
+  item from shrinking (give it a
+  shot and see the difference!).
+*/
+border-radius: 50%;
+}
+
+
+/* Cosmetic styles */
+form {
+  padding: 8px;
+  border: 1px solid hsl(0deg 0% 50%);
+}
+
+label {
+  font-weight: 500;
+}
+input {
+  display: block;
+  width: 100%;
+  height: 2.5rem;
+  margin-top: 4px;
+}
+button {
+  height: 2.5rem;
+}

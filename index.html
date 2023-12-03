@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-compatible" content="ie-edge">
+    <title>Css style for test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="p"><center><trong>Google</trong></center></div>
+    <style>
+        /* This is the key property: */
+        .item.ball {
+          flex-shrink: 0;
+        }
+      </style>
+      
+      <div class="wrapper">
+        <div class="item ball"></div>
+        <div class="item stretch"></div>
+        <div class="item ball"></div>
+      </div>
+
+
+        <p>
+      <style>
+        form {
+          display: flex;
+          align-items: flex-end;
+          flex-wrap: wrap;
+          gap: 8px;
+        }
+        .name {
+          flex-grow: 1;
+          flex-basis: 120px;
+        }
+        .email {
+          flex-grow: 3;
+          flex-basis: 170px;
+        }
+        button {
+          flex-grow: 1;
+          flex-basis: 70px;
+        }
+      </style>
+      
+      <form>
+        <label class="name" for="name-field">
+          Name:
+          <input id="name-field" />
+        </label>
+        <label class="email" for="email-field">
+          Email:
+          <input id="email-field" type="email" />
+        </label>
+        <button>
+          Submit
+        </button>
+      </form>
+      </p>
+    </body>
+</html>
